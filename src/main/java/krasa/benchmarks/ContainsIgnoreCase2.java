@@ -38,7 +38,7 @@ public class ContainsIgnoreCase2 {
 	}
 
 	@Benchmark
-	public int test1_IJ(MyState state) {
+	public int test_IJ(MyState state) {
 		int x = 0;
 		String[] args = state.args;
 		String[] searches = state.searches;
@@ -55,7 +55,7 @@ public class ContainsIgnoreCase2 {
 	}
 
 	@Benchmark
-	public int test2_lang(MyState state) {
+	public int test_lang(MyState state) {
 		int x = 0;
 		String[] args = state.args;
 		String[] searches = state.searches;
@@ -72,7 +72,7 @@ public class ContainsIgnoreCase2 {
 	}
 
 	@Benchmark
-	public int test3_lang3(MyState state) {
+	public int test_lang3(MyState state) {
 		int x = 0;
 		String[] args = state.args;
 		String[] searches = state.searches;
@@ -89,7 +89,7 @@ public class ContainsIgnoreCase2 {
 	}
 
 	@Benchmark
-	public int test4_JDK(MyState state) {
+	public int test_JDK(MyState state) {
 		int x = 0;
 		String[] args = state.args;
 		String[] searches = state.searches;
@@ -106,7 +106,7 @@ public class ContainsIgnoreCase2 {
 	}
 
 	@Benchmark
-	public int test4_JDK_notLowercase(MyState state) {
+	public int test_JDK_notLowercase(MyState state) {
 		int x = 0;
 		String[] args = state.args;
 		String[] searches = state.searches;
